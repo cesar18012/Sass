@@ -1,0 +1,98 @@
+@use '../base/variables' as b;
+@use '../base/mixims' as m;
+
+header {
+    
+
+    img {
+        height: 8rem;
+        width: 12rem;
+    }
+
+    h1,
+    h2 {
+        color: b.$rosa-fuerte;
+    }
+
+    .navegador-index {
+        padding: 1rem;
+        background-color: b.$rosa;
+        @include m.flex-nav;
+
+        a {
+            text-decoration: none;
+            &:hover {
+                background-color: b.$blanco;
+                font: {
+                    weight: bold;
+                }
+            }
+        }
+    } 
+
+    .navegador-redes{
+        padding: 1rem;
+        background-color: b.$rosa;
+
+        a {
+            text-decoration: none;
+            &:hover {
+                background-color: b.$blanco;
+                font: {
+                    weight: bold;
+                }
+            }
+        }
+    }
+}
+footer{
+    margin-top: 100%;
+    .navegador-index {
+        padding: 1rem;
+        background-color: b.$rosa;
+        @include m.flex-nav;
+
+        a {
+            text-decoration: none;
+            &:hover {
+                background-color: b.$blanco;
+                font: {
+                    weight: bold;
+                }
+            }
+        }
+    } 
+
+    .navegador-redes{
+        padding: 1rem;
+        background-color: b.$rosa;
+
+        a {
+            text-decoration: none;
+            &:hover {
+                background-color: b.$blanco;
+                font: {
+                    weight: bold;
+                }
+            }
+        }
+    }
+}
+@media(width <= 768px){
+    
+   
+    h1,h2{ 
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 80px;
+        a {
+            display: block;
+            margin-bottom: 6px;
+            
+        }
+    }
+}

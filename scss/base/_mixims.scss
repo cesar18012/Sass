@@ -1,0 +1,126 @@
+@use '../base/variables' as v;
+
+@mixin flex-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin frase {
+    padding: 1rem;
+}
+
+@mixin img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+@mixin color-fondo($id) {
+    border: 3px solid #000000;
+
+    @if $id =="face" {
+        background-color: v.$fondo_fc;
+    }
+
+    @else if $id =="in" {
+        background-color: v.$fondo_in;
+    }
+
+    @else if $id =="ig" {
+        background-color: v.$fondo_ig;
+    }
+
+    @else if $id =="yt" {
+        background-color: v.$fondo_yt;
+    }
+
+    @else if $id =="tw" {
+        background-color: v.$fondo_tw;
+    }
+
+    @else if $id =="pi" {
+        background-color: v.$fondo_pi;
+    }
+}
+
+@mixin color-fondo-paleta($clase) {
+    width: 16rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+
+    @if $clase =="rojo" {
+        background-color: v.$fondo_rojo;
+    }
+
+    @else if $clase =="verde" {
+        background-color: v.$fondo_verde;
+    }
+
+    @else if $clase =="azul" {
+        background-color: v.$fondo_azul;
+    }
+
+    @else if $clase =="morado" {
+        background-color: v.$fondo_morado;
+    }
+}
+
+@mixin alinear {
+    text-align: left;
+    display: block;
+}
+
+@mixin tonalidad-fondo-paleta($clase) {
+    width: 6rem;
+    height: 6rem;
+   
+
+    @if $clase =="light-fire" {
+        background-color: v.$light-fire;
+    }
+
+    @else if $clase =="fire" {
+        background-color: v.$fire;
+    }
+
+    @else if $clase =="dark-fire" {
+        background-color: v.$dark-fire;
+    }
+
+    @else if $clase =="light-green" {
+        background-color: v.$light-green;
+    }
+
+    @else if $clase =="greeen" {
+        background-color: v.$greeen;
+    }
+
+    @else if $clase =="dark-green" {
+        background-color: v.$dark-green;
+    }
+
+    @else if $clase =="light-deep" {
+        background-color: v.$light-deep;
+    }
+
+    @else if $clase =="deep" {
+        background-color: v.$deep;
+    }
+
+    @else if $clase =="dark-deep" {
+        background-color: v.$dark-deep;
+    }
+
+    @else if $clase =="light-violet" {
+        background-color: v.$light-violet;
+    }
+
+    @else if $clase =="violeet" {
+        background-color: v.$violet;
+    }
+
+    @else if $clase =="dark-violet" {
+        background-color: v.$dark-violet;
+    }
+}

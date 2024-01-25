@@ -1,0 +1,38 @@
+@use '../base/mixims' as m;
+*{
+    list-style: none;
+    
+}
+
+
+.rojo {
+    @include m.color-fondo-paleta(rojo)
+}
+
+.verde {
+    @include m.color-fondo-paleta(verde)
+}
+
+.azul {
+    @include m.color-fondo-paleta(azul)
+}
+
+.morado {
+    @include m.color-fondo-paleta(morado)
+}
+
+ul{
+    padding:0;
+}
+.light-fire{@include m.tonalidad-fondo-paleta(light-fire)}
+.fire{@include m.tonalidad-fondo-paleta(fire)}
+.dark-fire{@include m.tonalidad-fondo-paleta(dark-fire)}
+.light-green{@include m.tonalidad-fondo-paleta(light-green)}
+.greeen{@include m.tonalidad-fondo-paleta(greeen)}
+.dark-green{@include m.tonalidad-fondo-paleta(dark-green)}
+.light-deep{@include m.tonalidad-fondo-paleta(light-deep)}
+.deep{@include m.tonalidad-fondo-paleta(deep)}
+.dark-deep{@include m.tonalidad-fondo-paleta(dark-deep)}
+.light-violet{@include m.tonalidad-fondo-paleta(light-violet)}
+.violeet{@include m.tonalidad-fondo-paleta(violeet)}
+.dark-violet{@include m.tonalidad-fondo-paleta(dark-violet)}

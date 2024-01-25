@@ -1,0 +1,18 @@
+{
+  "name": "practica6sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cesar",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "bootstrap": "^5.3.2",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.70.0",
+    "save-dev": "^0.0.1-security"
+  }
+}

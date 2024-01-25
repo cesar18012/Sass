@@ -1,0 +1,78 @@
+@use '../base/mixims' as m;
+
+#face {
+    @include m.color-fondo(face);
+
+    img {
+        @include m.img
+    }
+
+    .frase {
+        @include m.frase;
+    }
+}
+
+#in {
+    @include m.color-fondo(in);
+
+    img {
+        @include m.img
+    }
+
+
+    .frase {
+        @include m.frase;
+    }
+}
+
+#ig {
+    @include m.color-fondo(ig);
+
+    img {
+        @include m.img
+    }
+
+    .frase {
+        @include m.frase;
+    }
+
+}
+
+#yt {
+    @include m.color-fondo(yt);
+
+    img {
+        @include m.img
+    }
+
+
+    .frase {
+        @include m.frase;
+    }
+}
+
+#tw {
+    @include m.color-fondo(tw);
+
+    img {
+        @include m.img
+    }
+
+
+    .frase {
+        @include m.frase;
+    }
+}
+
+#pi {
+    @include m.color-fondo(pi);
+
+    img {
+        @include m.img
+    }
+
+
+    .frase {
+        @include m.frase;
+    }
+}
